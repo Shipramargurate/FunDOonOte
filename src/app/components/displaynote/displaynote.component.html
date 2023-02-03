@@ -1,0 +1,23 @@
+
+<div class="maincontainer" >
+    <div class="takeAnote" *ngFor="let note of notelist">
+        <div class="titleInputSection">
+            <input placeholder="Title" class="titleInput" [(ngModel)]="note.title">
+            <div class="titleImgSection">
+
+                <span>
+                    <a class="iconstag3"> <img src="../../../assets/push pin.png"
+                            height="25px"> </a>
+                </span>
+            </div>
+        </div>
+       <div> {{note.id}}</div>
+        <div>
+            <div>
+                <textarea matInput placeholder="Take a note..." [(ngModel)]="note.description"
+                    class="noteDescription"></textarea>
+                    <app-icons [noteCard]="note"></app-icons>
+            </div>
+        </div>
+    </div>
+</div>

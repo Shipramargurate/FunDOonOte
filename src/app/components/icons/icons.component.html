@@ -1,0 +1,29 @@
+<div style="display: flex;">
+  <div class="iconspace">
+    <a class="iconstag3"> <img src="../../../assets/notifications_FILL0_wght400_GRAD0_opsz48.png" height="25px"> </a>
+    <a class="iconstag3"> <img src="../../../assets/person_add_FILL0_wght400_GRAD0_opsz48.png" height="25px"> </a>
+    <a class="iconstag3"> <img src="../../../assets/palette_FILL0_wght400_GRAD0_opsz48.png" height="25px"> </a>
+    <a class="iconstag3"> <img src="../../../assets/image_FILL0_wght400_GRAD0_opsz48.png" height="25px">
+    </a>
+    <a class="iconstag3"> <img src="../../../assets/archive_FILL0_wght400_GRAD0_opsz48.png" height="25px"> </a>
+    <a class="iconstag3"> <button mat-icon-button [matMenuTriggerFor]="menu"
+        aria-label="Example icon-button with a menu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="deletenote()">
+          <span>delete note</span>
+        </button>
+        <button mat-menu-item>
+          <span>make a copy</span>
+        </button>
+        <button mat-menu-item>
+          <span>add label</span>
+        </button>
+      </mat-menu>
+      <!-- <img src="../../../assets/more_vert_FILL0_wght400_GRAD0_opsz48.png"
+                height="25px"> -->
+    </a>
+  </div>
+
+</div>

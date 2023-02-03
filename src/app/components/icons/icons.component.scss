@@ -1,0 +1,36 @@
+.maincontainer {
+  // border: 5px solid black;
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  width: 1100px;
+  position: relative;
+  left: 150px;
+
+}
+.iconstag3 {
+  margin-left: 10px;
+  cursor: pointer;
+  //  border: 1px solid black;
+
+
+}
+
+.iconspace {
+  display: flex;
+  // border: 1px solid black;
+  width: 400px;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+@media only screen and (min-width: 300px) and (max-width: 900px) {
+  .maincontainer {
+    // border: 5px solid black;
+    height: 1000px;
+    width: 100%;
+    margin-left: 10px;
+  }
+}

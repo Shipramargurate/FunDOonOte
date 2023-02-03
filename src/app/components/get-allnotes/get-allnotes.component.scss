@@ -1,0 +1,160 @@
+.maincontainer {
+  // border: 5px solid black;
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  width: 1100px;
+  position: relative;
+  left: 150px;
+  
+
+}
+
+.iconstag1 {
+  margin-left: 200px;
+
+}
+
+.iconstag2 {
+  margin-left: 10px;
+
+
+}
+
+.iconstag3 {
+  margin-left: 10px;
+  cursor: pointer;
+  //  border: 1px solid black;
+
+
+}
+
+.iconspace {
+  display: flex;
+  // border: 1px solid black;
+  width: 400px;
+  justify-content: space-between;
+align-items: center;
+
+}
+
+.closebutton {
+  // border: 1px solid black;
+  position: relative;
+  left: 100px;
+  bottom: 5px;
+
+}
+
+.iconimg4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+
+}
+
+.noteclose {
+  display: flex;
+  flex-direction: column;
+  float: right !important;
+  justify-content: space-around;
+
+
+}
+
+.noteclose a {
+  text-decoration: none;
+  font-size: large;
+
+  color: #000;
+}
+
+
+.takeAnote {
+  border: 1px solid black;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 8px;
+margin-left: 10px;
+  background: #fff;
+  margin-top: 40px;
+  width: 250px;
+  margin-bottom: 20px;
+  
+
+}
+
+// .takeAnote1{
+// //   border: 1px solid black;
+// }
+.takeAnote textarea {
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+  white-space: nowrap;
+  overflow-x: hidden;
+  /* or hidden */
+}
+
+.takeAnote .titleInput {
+  padding: 14px 16px 12px 16px;
+  height: 48px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #202124;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+
+  border-radius: 8px;
+}
+
+.takeAnote .noteDescription {
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 16px 12px 16px;
+  font-size: .875rem;
+
+  font-weight: 400;
+
+}
+.titleInput,
+.noteDescription textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+
+}
+
+.titleInputSection {
+  position: relative;
+
+  // border: 1px solid black;
+}
+
+.titleImgSection {
+  position: absolute;
+  top: 15%;
+  right: 1%;
+  display: flex;
+}
+
+.titleImgSection img {
+  opacity: 0.54;
+  margin: 0 15px;
+  padding: 5px;
+  cursor: pointer;
+}
+@media only screen and (min-width: 300px) and (max-width: 900px){
+  .maincontainer {
+  // border: 5px solid black;
+  height: 1000px;
+  width: 100%;
+  margin-left: 10px;
+  }
+}

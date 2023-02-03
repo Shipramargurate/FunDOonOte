@@ -1,0 +1,78 @@
+
+<div class="header-container">
+  <div class="form-container">
+    <div class="logo">
+      <ul>
+        <li class="f">F</li>
+        <li class="u">u</li>
+        <li class="n">n</li>
+        <li class="d">d</li>
+        <li class="o">o</li>
+        <li class="o1">o</li>
+      </ul>
+    </div>
+    <div class="form-block">
+      <div class="header-name">
+        <h1>Create your Fundoo account</h1>
+      </div>
+      <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+        <div class="name-block">
+              <mat-form-field appearance="outline">
+                <mat-label>First Name</mat-label>
+                <input matInput placeholder="FirstName" type="text" formControlName="firstName" >
+                <!-- <mat-hint>First letter should be capital</mat-hint> -->
+              </mat-form-field>
+              
+              <mat-form-field appearance="outline" style="width: 195px;">
+                <mat-label >Last Name</mat-label>
+                <input matInput placeholder="LastName" type="text" formControlName="lastName" >
+              </mat-form-field>
+          </div>
+        <div class="email-container">
+          <mat-form-field class="email-field" appearance="outline" style="width: 95%;">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Enter Email" type="text" formControlName="email" >
+            <mat-hint>Use letters , characters and numbers</mat-hint>
+          </mat-form-field>
+        </div>
+        <div class="mail-msg">
+          <h3><a href="#" class="link">Use my current email address instead</a></h3>
+        </div>
+        <div class="password-field">
+            <mat-form-field appearance="outline">
+              <mat-label>Password</mat-label>
+              <input matInput placeholder="Enter Password" type="password" formControlName="password" >
+            </mat-form-field>
+
+            <mat-form-field appearance="outline"style="width: 195px;">
+              <mat-label>Confirm</mat-label>
+              <input matInput placeholder="Enter Confirm" type="text" formControlName="confirmPassword">
+
+            </mat-form-field>
+          </div>
+        
+        <div class="pass-msg">
+          <p>Use 8 or more characters including atleast 1 uppercase,lowercase</p>
+          <p> & special characters</p>
+        </div>
+        <div class="check">
+          <input type="checkbox"> show password
+        </div>
+        <div class="submit-field">
+          <div class="sign-instead">
+            <h3><a style="text-decoration: none; color: #1a73e8; " href="/login">Sign in instead</a></h3>
+          </div>
+          <div>
+         <button (ngSubmit)="onSubmit()" class="button" >Next</button>        
+        </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="logo-block">
+      <figure class="img1">
+        <img src="../../../assets/account.svg" alt width="244" height="244">
+        <figcaption class="caption">One account. All of Fundoo working for you.</figcaption>
+      </figure>
+    </div>
+  </div>

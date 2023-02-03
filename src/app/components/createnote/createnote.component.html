@@ -1,0 +1,43 @@
+<div>
+    <div #notePlaceholder (click)="noteClick()" *ngIf="!notetoggle || notetoggle " class="takeAnote">
+        <div class="titleInputSection" *ngIf="!notetoggle">
+            <input placeholder="Title" class="titleInput">
+            <div class="titleImgSection">
+
+                <span class="iconstag3">
+                    <img src="../../../assets/push pin.png" width="20px" height="20px">
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <div *ngIf="notetoggle" class="takeAnote">
+        <div class="titleInputSection">
+            <input placeholder="Title" class="titleInput" [(ngModel)]="title">
+            <div class="titleImgSection">
+
+                <span class="iconstag3">
+                    <img src="../../../assets/push pin.png" height="25px">
+                </span>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <textarea matInput placeholder="Take a note..." class="noteDescription"
+                    [(ngModel)]="description"></textarea>
+            </div>
+            <app-icons [noteCard]="data"></app-icons>
+
+            <div class="closebutton">
+                <button mat-flat-button (click)="closebutton()">Close</button>
+
+            </div>
+
+        </div>
+    </div>
+    
+    
+</div>
+<!-- <app-get-allnotes></app-get-allnotes> -->
