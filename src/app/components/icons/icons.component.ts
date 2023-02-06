@@ -8,15 +8,12 @@ import { NotesService } from 'src/app/services/notesservices/notes.service';
 })
 export class IconsComponent implements OnInit {
   @Input() noteCard: any;
-  isDelete = false;
-  isDeleted: any;
   notelist: any = [];
   noteId: any;
   constructor(private noteservice: NotesService) {
 
   }
   ngOnInit(): void {
-    // this.isDelete = this.noteCard.isDeleted;
   }
 
   deletenote() {
@@ -31,17 +28,17 @@ export class IconsComponent implements OnInit {
       console.log("note deleted", response)
     })
   }
+  archivenote(){
+    console.log("note archived");
+    console.log(this.noteId);
+    let payload = {
+      noteIdList: [this.noteCard.id],
+      isArchived: true,
+    }
+    console.log(payload);
+    return this.noteservice.archivenote(payload).subscribe((response: any) => {
+      console.log("note archived", response)
+    })
+    
+  }
 }
-
-
-  // deletenote() {
-  //   let payload = {
-  //     noteIdList: [this.noteCard.id],
-  //     isDeleted: true,
-  //   }
-  //   return this.noteservice.deletenote(payload).subscribe((response: any) => {
-  //     console.log("note deleted", response)
-  //   })
-  //}
-  // }
-

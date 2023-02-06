@@ -41,6 +41,16 @@ export class NotesService {
     }
     return this.httpservice.Post('/notes/trashNotes',payload, true, headerOptions)
   }
+  archivenote(payload : any){
+    this.token = localStorage.getItem('token')
+    let headerOptions = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json',
+        'Authorization': this.token
+      })
+    }
+    return this.httpservice.Post('/notes/archiveNotes',payload, true, headerOptions)
+  }
   }
 
 

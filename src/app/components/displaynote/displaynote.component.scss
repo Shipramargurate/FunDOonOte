@@ -1,19 +1,27 @@
-.maincontainer{
+.maincontainer {
   display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  flex-wrap: wrap;
+  // justify-content: space-evenly;
+  flex-direction: row;
+  width: 100%;
+margin-left: 80px;
+
+    // border: 1px solid black;
+
 }
+
 .takeAnote {
   width: 250px;
-// border: 1px solid black;
+  // border: 1px solid black;
   margin: auto;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   border-radius: 8px;
   background: #fff;
   margin-top: 40px;
   margin-left: 10px;
-margin-right: 10px;
+  margin-right: 10px;
 }
+
 .takeAnote .titleInput {
   padding: 14px 16px 12px 16px;
   height: 48px;
@@ -25,6 +33,7 @@ margin-right: 10px;
   border: none;
   border-radius: 8px;
 }
+
 .takeAnote .noteDescription {
   box-sizing: border-box;
   outline: none;
@@ -34,7 +43,8 @@ margin-right: 10px;
   font-size: .875rem;
   font-weight: 400;
 }
-.iconstag3{
+
+.iconstag3 {
   // border: 1px solid black;
   // height: 40px;
   position: relative;
