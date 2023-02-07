@@ -23,5 +23,11 @@ export class GetAllnotesComponent implements OnInit {
       console.log(this.notelist);
     })
   }
+  received(eve: any){
+    console.log("note added succefully...", eve.status.details)
+    this.getAllNotes();
+    const note = eve.status.details;
+
+  }
  
 }
